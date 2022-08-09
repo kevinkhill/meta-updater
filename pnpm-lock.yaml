@@ -1,4 +1,4 @@
-lockfileVersion: 5.3
+lockfileVersion: 5.4
 
 specifiers:
   '@pnpm/find-workspace-dir': ^3.0.1
@@ -43,7 +43,7 @@ devDependencies:
   jest: 27.0.6
   rimraf: 3.0.2
   tempy: 1.0.1
-  ts-jest: 27.0.3_jest@27.0.6+typescript@4.3.4
+  ts-jest: 27.0.3_koedsilhtx6stdzeaegusk7g4m
   typescript: 4.3.4
 
 packages:
@@ -245,6 +245,8 @@ packages:
     resolution: {integrity: sha512-X67Z5y+VBJuHB/RjwECp8kSl5uYi0BvRbNeWqkaJCVh+LiTPl19WBUfG627psSgp9rSf6ojuXghQM3ha6qHHdA==}
     engines: {node: '>=6.0.0'}
     hasBin: true
+    dependencies:
+      '@babel/types': 7.14.5
     dev: true
 
   /@babel/plugin-syntax-async-generators/7.8.4_@babel+core@7.14.6:
@@ -1739,6 +1741,7 @@ packages:
     resolution: {integrity: sha512-xiqMQR4xAeHTuB9uWm+fFRcIOgKBMiOBP+eXiyT7jsgVCq1bkVygt00oASowB7EdtpOHaaPgKt812P9ab+DDKA==}
     engines: {node: ^8.16.0 || ^10.6.0 || >=11.0.0}
     os: [darwin]
+    requiresBuild: true
     dev: true
     optional: true
 
@@ -3524,7 +3527,7 @@ packages:
     engines: {node: '>=12'}
     dev: false
 
-  /ts-jest/27.0.3_jest@27.0.6+typescript@4.3.4:
+  /ts-jest/27.0.3_koedsilhtx6stdzeaegusk7g4m:
     resolution: {integrity: sha512-U5rdMjnYam9Ucw+h0QvtNDbc5+88nxt7tbIvqaZUhFrfG4+SkWhMXjejCLVGcpILTPuV+H3W/GZDZrnZFpPeXw==}
     engines: {node: ^10.13.0 || ^12.13.0 || ^14.15.0 || >=15.0.0}
     hasBin: true

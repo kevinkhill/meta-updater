@@ -13,7 +13,9 @@ fixtures
 .tmp
 _docpress
 
-lib
+# Commenting this out since I want the built files
+# available from the repo without needing to publish
+#lib
 
 # Visual Studio Code configs
 .vscode/
