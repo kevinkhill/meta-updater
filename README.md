@@ -16,7 +16,7 @@ Create a JavaScript file at `.meta-updater/main.mjs` that contains the updater f
 For instance, the next file will have updaters for `package.json` and `tsconfig.json` files:
 
 ```js
-export default (workspaceDir) => {
+export default (workspaceDir, opts) => {
   return {
     'package.json': (manifest, dir) => {
       return {
@@ -49,9 +49,13 @@ To check that all meta files are up-to-date, run `pnpm meta-updater --test`. It 
 
 ## API
 
+### Default Export Function: `(workspaceDir, opts) => Record<string, UpdaterFunction>`
+
+The default exported function receives the workspace directory as the first argument, and the parsed CLI arguments as the second.
+
 ### Updater Function: `(config | null, dir, manifest) => Promise<config | null>`
 
-The updater function recieves the config object or null (if the config file does not exist). The updater function returns the config object that should be saved. If the updater function returns null, the config should be removed.
+The updater function receives the config object or null (if the config file does not exist). The updater function returns the config object that should be saved. If the updater function returns null, the config should be removed.
 
 ## License
 
